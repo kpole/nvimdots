@@ -14,14 +14,14 @@ function rhs_options:new()
 	local instance = {
 		cmd = "",
 		options = {
-			noremap = false,
-			silent = false,
-			expr = false,
-			nowait = false,
-			callback = nil,
-			desc = "",
+			noremap = 	false,			-- 是否禁用递归映射
+			silent = 		false,			-- 是否执行时不显示命令
+			expr = 			false,			-- 是否将命令作为表达式求值
+			nowait = 		false,			-- 是否不等待按键完成
+			callback = 	nil,				-- 回调函数
+			desc = 			"",
 		},
-		buffer = false,
+		buffer = false,						-- vim.api.nvim_set_keymap or vim.api.nvim_buf_set_keymap，默认全局
 	}
 	setmetatable(instance, self)
 	self.__index = self
