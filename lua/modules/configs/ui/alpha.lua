@@ -40,7 +40,7 @@ return function()
 
 	local leader = " "
 	dashboard.section.buttons.val = {
-		button("space f c", " Scheme change", leader, nil, {
+		button("<leader> f c", " Scheme change", leader, nil, {
 			noremap = true,
 			silent = true,
 			nowait = true,
@@ -48,7 +48,7 @@ return function()
 				require("telescope.builtin").colorscheme()
 			end,
 		}),
-		button("space f r", " File frecency", leader, nil, {
+		button("<leader> f r", " File frecency", leader, nil, {
 			noremap = true,
 			silent = true,
 			nowait = true,
@@ -56,7 +56,7 @@ return function()
 				require("telescope").extensions.frecency.frecency({})
 			end,
 		}),
-		button("space f e", "󰋚 File history", leader, nil, {
+		button("<leader> f e", "󰋚 File history", leader, nil, {
 			noremap = true,
 			silent = true,
 			nowait = true,
@@ -64,7 +64,7 @@ return function()
 				require("telescope.builtin").oldfiles()
 			end,
 		}),
-		button("space f p", " Project find", leader, nil, {
+		button("<leader> f p", " Project find", leader, nil, {
 			noremap = true,
 			silent = true,
 			nowait = true,
@@ -72,7 +72,7 @@ return function()
 				require("telescope").extensions.projects.projects({})
 			end,
 		}),
-		button("space f f", "󰈞 File find", leader, nil, {
+		button("<leader> f f", "󰈞 File find", leader, nil, {
 			noremap = true,
 			silent = true,
 			nowait = true,
@@ -80,7 +80,7 @@ return function()
 				require("telescope.builtin").find_files()
 			end,
 		}),
-		button("space f w", " Word find", leader, nil, {
+		button("<leader> f w", " Word find", leader, nil, {
 			noremap = true,
 			silent = true,
 			nowait = true,
