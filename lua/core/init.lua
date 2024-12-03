@@ -23,7 +23,7 @@ local createdir = function()
 end
 
 local leader_map = function()
-	vim.g.mapleader = " "
+	-- vim.g.mapleader = " "
 	-- NOTE:
 	--  > Uncomment the following if you're using a <leader> other than <Space>, and you wish
 	--  > to disable advancing one character by pressing <Space> in normal/visual mode.
